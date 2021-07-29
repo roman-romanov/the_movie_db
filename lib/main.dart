@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:the_movie_db/widgets/main_screen/main_screen_widget.dart';
 import 'widgets/auth/auth_widget.dart';
 
 void main() {
@@ -16,10 +17,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'The Movie DB',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        appBarTheme: AppBarTheme(backgroundColor: const Color.fromRGBO(3, 37, 65, 1)),
-      ),
-      home: AuthWidget(title: 'The Movie DB'),
+          primarySwatch: Colors.blue,
+          appBarTheme:
+              AppBarTheme(backgroundColor: const Color.fromRGBO(3, 37, 65, 1))),
+      routes: {
+        '/auth_widget': (context) => AuthWidget(),
+        '/main_screen': (context) => MainScreen(),
+      },
+      //home: AuthWidget(title: 'The Movie DB'),
+      initialRoute: '/auth_widget',
+      onGenerateRoute: (RouteSettings settings) {
+        return PageRouteBuilder(pageBuilder: (context, _, __) {
+          return Scaffold(body: MainScreen(),);
+        });
+      },
     );
   }
 }
