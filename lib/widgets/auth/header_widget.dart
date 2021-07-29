@@ -26,6 +26,11 @@ class _HeaderWidget extends State<HeaderWidget> {
     } else {
       errorPassword = 'Не верный пароль';
     }
+    if (login == 'admin' && password == 'admin') {
+      Navigator.of(context).pushNamed('/main_screen');
+      //Заменяет вотрую страничку собой
+      //Navigator.of(context).pushReplacementNamed('/main_screen');
+    }
     setState(() {});
   }
 
@@ -89,7 +94,7 @@ class _HeaderWidget extends State<HeaderWidget> {
             SizedBox(height: 25),
             Container(
               child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-                TextButton(
+                ElevatedButton(
                   style: buttonBlueStyle,
                   onPressed: () {
                     _auth();
