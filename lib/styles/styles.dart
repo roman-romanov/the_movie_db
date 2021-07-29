@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 final textStyle = const TextStyle(fontSize: 16, color: Colors.black);
@@ -29,3 +28,8 @@ final blueButtonStyle = TextButton.styleFrom(
 );
 
 final errorRedText = const TextStyle(color: Colors.red);
+
+final bottomNavigationColor = BottomNavigationBarThemeData(
+    backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
+    unselectedItemColor: Colors.grey,
+    selectedItemColor: Colors.white);

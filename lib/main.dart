@@ -18,8 +18,13 @@ class MyApp extends StatelessWidget {
       title: 'The Movie DB',
       theme: ThemeData(
           primarySwatch: Colors.blue,
+          bottomNavigationBarTheme: BottomNavigationBarThemeData(
+              backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
+              unselectedItemColor: Colors.grey,
+              selectedItemColor: Colors.white),
           appBarTheme:
               AppBarTheme(backgroundColor: const Color.fromRGBO(3, 37, 65, 1))),
+
       routes: {
         '/auth_widget': (context) => AuthWidget(),
         '/main_screen': (context) => MainScreen(),
@@ -28,7 +33,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/auth_widget',
       onGenerateRoute: (RouteSettings settings) {
         return PageRouteBuilder(pageBuilder: (context, _, __) {
-          return Scaffold(body: MainScreen(),);
+          return Scaffold(
+            body: MainScreen(),
+          );
         });
       },
     );

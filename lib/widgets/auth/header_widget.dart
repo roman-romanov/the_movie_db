@@ -7,8 +7,8 @@ class HeaderWidget extends StatefulWidget {
 }
 
 class _HeaderWidget extends State<HeaderWidget> {
-  final _loginTextController = TextEditingController();
-  final _passwordTextController = TextEditingController();
+  final _loginTextController = TextEditingController(text: 'admin');
+  final _passwordTextController = TextEditingController(text: 'admin');
 
   String? errorLogin = '';
   String? errorPassword = '';
