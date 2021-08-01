@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:the_movie_db/styles/styles.dart';
 
@@ -12,6 +13,30 @@ class _HeaderWidget extends State<HeaderWidget> {
 
   String? errorLogin = '';
   String? errorPassword = '';
+
+  var _createAccount;
+  var _verifyAccount;
+
+  @override
+  void initState() {
+    _createAccount = TapGestureRecognizer()
+      ..onTap = () {
+        Navigator.of(context).pushNamed('/main_screen');
+      };
+    _verifyAccount = TapGestureRecognizer()
+      ..onTap = () {
+        Navigator.of(context).pushNamed('/main_screen');
+      };
+
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _createAccount.dispose();
+    _verifyAccount.dispose();
+    super.dispose();
+  }
 
   void _auth() {
     final login = _loginTextController.text;
@@ -50,23 +75,33 @@ class _HeaderWidget extends State<HeaderWidget> {
             Text('Войти в свою учётную запись',
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
             SizedBox(height: 10),
-            Text(
-              'Чтобы пользоваться правкой и возможностями рейтинга TMDb, а также получить персональные рекомендации, необходимо войти в свою учётную запись. Если у вас нет учётной записи, её регистрация является бесплатной и простой. Нажмите здесь, чтобы начать.',
-              style: textStyle,
+            RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                    text:
+                        'Чтобы пользоваться правкой и возможностями рейтинга TMDb, а также получить персональные рекомендации, необходимо войти в свою учётную запись. Если у вас нет учётной записи, её регистрация является бесплатной и простой. ',
+                    style: textStyle),
+                TextSpan(
+                    text: 'Нажмите здесь, ',
+                    style: blueLinkStyle,
+                    recognizer: _createAccount),
+                TextSpan(text: 'чтобы начать.', style: textStyle),
+              ]),
             ),
-            TextButton(
-              style: blueButtonStyle,
-              onPressed: () {},
-              child: Text('Нажмите здесь'),
-            ),
-            SizedBox(height: 15),
-            Text(
-                'Если Вы зарегистрировались, но не получили письмо для подтверждения, нажмите здесь, чтобы отправить письмо повторно.',
-                style: textStyle),
-            TextButton(
-                style: blueButtonStyle,
-                onPressed: () {},
-                child: Text('нажмите здесь')),
+            SizedBox(height: 25),
+            RichText(
+                text: TextSpan(children: [
+              TextSpan(
+                  text:
+                      'Если Вы зарегистрировались, но не получили письмо для подтверждения,',
+                  style: textStyle),
+              TextSpan(
+                  text: ' нажмите здесь,',
+                  style: blueLinkStyle,
+                  recognizer: _verifyAccount),
+              TextSpan(
+                  text: ' чтобы отправить письмо повторно.', style: textStyle),
+            ])),
             SizedBox(height: 25),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
