@@ -26,6 +26,7 @@ final blueButtonStyle = TextButton.styleFrom(
   primary: Color(0xFF01B4E4),
   textStyle: TextStyle(fontSize: 16),
 );
+final blueLinkStyle = TextStyle(color: Color(0xFF01B4E4), fontSize: 16);
 
 final errorRedText = const TextStyle(color: Colors.red);
 
