@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
-  static const List<Widget> _widgets = [
+  List<Widget> _widgets = [
     Text('Новости'),
     Text('Фильмы'),
     Text('Сериалы'),
