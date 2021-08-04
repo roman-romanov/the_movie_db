@@ -30,14 +30,14 @@ class MyApp extends StatelessWidget {
         '/main_screen': (context) => MainScreen(),
       },
       //home: AuthWidget(title: 'The Movie DB'),
-      initialRoute: '/auth_widget',
-      onGenerateRoute: (RouteSettings settings) {
-        return PageRouteBuilder(pageBuilder: (context, _, __) {
-          return Scaffold(
-            body: MainScreen(),
-          );
-        });
-      },
+       initialRoute: '/auth_widget',
+      // onGenerateRoute: (RouteSettings settings) {
+      //   return PageRouteBuilder(pageBuilder: (context, _, __) {
+      //     return Scaffold(
+      //       body: MainScreen(),
+      //     );
+      //   });
+      // },
     );
   }
 }

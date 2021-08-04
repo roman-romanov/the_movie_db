@@ -52,9 +52,9 @@ class _HeaderWidget extends State<HeaderWidget> {
       errorPassword = 'Не верный пароль';
     }
     if (login == 'admin' && password == 'admin') {
-      Navigator.of(context).pushNamed('/main_screen');
+      //Navigator.of(context).pushNamed('/main_screen');
       //Заменяет вотрую страничку собой
-      //Navigator.of(context).pushReplacementNamed('/main_screen');
+      Navigator.of(context).pushReplacementNamed('/main_screen');
     }
     setState(() {});
   }
