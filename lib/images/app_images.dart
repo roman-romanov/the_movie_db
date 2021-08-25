@@ -19,4 +19,14 @@ abstract class AppImages {
       AssetImage('assets/images/cast_criuse_of_jungles/dwayne_johnson.jpg');
   static const emily_blunt =
       AssetImage('assets/images/cast_criuse_of_jungles/emily_blunt.jpg');
+  static const edgar_ramirez =
+      AssetImage('assets/images/cast_criuse_of_jungles/edgar_ramirez.jpg');
+  static const jack_whitehall =
+      AssetImage('assets/images/cast_criuse_of_jungles/jack_whitehall.jpg');
+  static const jesse_plemons =
+      AssetImage('assets/images/cast_criuse_of_jungles/jesse_plemons.jpg');
+  static const paul_giamatti =
+      AssetImage('assets/images/cast_criuse_of_jungles/paul_giamatti.jpg');
+  static const dani_rovira =
+      AssetImage('assets/images/cast_criuse_of_jungles/dani_rovira.jpg');
 }
