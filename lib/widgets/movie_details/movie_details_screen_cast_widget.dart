@@ -37,6 +37,14 @@ class MovieDetailsScreenCastWidget extends StatelessWidget {
           image: AssetImage(AppImages.dani_rovira.assetName).assetName,
           name: daniRovira,
           castName: sancho),
+      _CastPerson(
+          image: AssetImage(AppImages.sulemCalderon.assetName).assetName,
+          name: sulemCalderon,
+          castName: quila),
+      _CastPerson(
+          image: AssetImage(AppImages.veronicaFalcon.assetName).assetName,
+          name: veronicaFalcon,
+          castName: traderSam),
     ];
     return ColoredBox(
       color: Colors.white,
