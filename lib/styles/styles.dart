@@ -34,3 +34,36 @@ final bottomNavigationColor = BottomNavigationBarThemeData(
     backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
     unselectedItemColor: Colors.grey,
     selectedItemColor: Colors.white);
+
+//******************************************************************************
+final backgroundGreyDark = Color.fromRGBO(24, 23, 27, 1);
+final greyDark = Color.fromRGBO(22, 21, 25, 1);
+final heightFifty = 60.0;
+final widthInfifnity = double.infinity;
+final verticalDividerThirty =
+    VerticalDivider(color: Colors.white, indent: 10, endIndent: 10);
+final half = 0.5;
+final black = Colors.black;
+
+final nameTwentySix = TextStyle(fontSize: 26.0, fontWeight: FontWeight.w600);
+final nameTwentyTwo =
+    TextStyle(fontSize: 22.0, fontWeight: FontWeight.w600, color: Colors.white);
+final nameSeventeen =
+    TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Colors.white);
+final nameSixteen =
+    TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white);
+final nameFifteen =
+    TextStyle(fontSize: 15, fontWeight: FontWeight.w400, color: Colors.white);
+final nameFifteenBold =
+    TextStyle(fontSize: 15, fontWeight: FontWeight.w700, color: Colors.white);
+final nameFourteen =
+    TextStyle(fontSize: 14, fontWeight: FontWeight.w400, color: Colors.white);
+
+final styleYearOfMovie = TextStyle(
+  color: Colors.white,
+  fontSize: 20,
+  fontFamily: 'Times New Roman',
+);
+//******************************************************************************
+final nameEighteen = TextStyle(fontSize: 18, fontWeight: FontWeight.w700);
+//******************************************************************************
