@@ -8,6 +8,36 @@ class MovieDetailsScreenCastWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var _castPersons = [
+      _CastPerson(
+          image: AssetImage(AppImages.dwayne_johnson.assetName).assetName,
+          name: dwayneJohnson,
+          castName: frankWolff),
+      _CastPerson(
+          image: AssetImage(AppImages.emily_blunt.assetName).assetName,
+          name: emilyBlunt,
+          castName: drLilyHoughton),
+      _CastPerson(
+          image: AssetImage(AppImages.edgar_ramirez.assetName).assetName,
+          name: edgarRamirez,
+          castName: lopeDeAguirre),
+      _CastPerson(
+          image: AssetImage(AppImages.jack_whitehall.assetName).assetName,
+          name: jackWhitehall,
+          castName: mcgregorHoughton),
+      _CastPerson(
+          image: AssetImage(AppImages.jesse_plemons.assetName).assetName,
+          name: jessePlemons,
+          castName: princeJoachim),
+      _CastPerson(
+          image: AssetImage(AppImages.paul_giamatti.assetName).assetName,
+          name: paulGiamatti,
+          castName: nilo),
+      _CastPerson(
+          image: AssetImage(AppImages.dani_rovira.assetName).assetName,
+          name: daniRovira,
+          castName: sancho),
+    ];
     return ColoredBox(
       color: Colors.white,
       child: Padding(
@@ -23,17 +53,19 @@ class MovieDetailsScreenCastWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            SizedBox(
-              height: 200,
+            Container(
+              height: 210,
               child: Scrollbar(
                 thickness: 5.0,
                 radius: Radius.circular(50),
                 child: ListView.builder(
+                    physics: BouncingScrollPhysics(
+                        parent: AlwaysScrollableScrollPhysics()),
                     scrollDirection: Axis.horizontal,
                     itemExtent: 120.0,
-                    itemCount: 10,
+                    itemCount: _castPersons.length,
                     itemBuilder: (context, index) {
-                      return _CastPerson();
+                      return _castPersons[index];
                     }),
               ),
             ),
@@ -51,32 +83,50 @@ class MovieDetailsScreenCastWidget extends StatelessWidget {
 }
 
 class _CastPerson extends StatelessWidget {
-  const _CastPerson({Key? key}) : super(key: key);
+  final String image;
+  final String name;
+  final String castName;
+  const _CastPerson(
+      {Key? key,
+      required this.image,
+      required this.name,
+      required this.castName})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Card(
-          clipBehavior: Clip.hardEdge,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Image(image: AssetImage(AppImages.dwayne_johnson.assetName)),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(dwayneJohnson, style: nameEighteen, maxLines: 2),
-                    Text(frankWolff),
-                  ],
-                ),
+    return InkWell(
+      onTap: () {},
+      child: Column(
+        children: [
+          Expanded(
+            child: Card(
+              clipBehavior: Clip.hardEdge,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Image(image: AssetImage(image)),
+                  Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          name,
+                          style: nameEighteen,
+                          maxLines: 2,
+                        ),
+                        Text(castName, maxLines: 3),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
