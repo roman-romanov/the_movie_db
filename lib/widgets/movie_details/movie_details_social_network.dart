@@ -38,7 +38,8 @@ class SocialNetworkWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, top: 20),
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -50,14 +51,27 @@ class SocialNetworkWidget extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Container(
+                      padding: EdgeInsets.only(right: 20),
+                      alignment: Alignment.centerRight,
+                      child:
+                          Text('07.08.2021 в 05:11', textAlign: TextAlign.end)),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Table(children: [
+                    child: Table(columnWidths: {
+                      0: FractionColumnWidth(0.4),
+                      1: FractionColumnWidth(0.2),
+                      2: FractionColumnWidth(0.4)
+                    }, children: [
                       TableRow(children: [
                         Text(comment),
                         Text('1', textAlign: TextAlign.center),
-                        Text('07 авг 2021 в 05:11\nПользователь',
-                            textAlign: TextAlign.end),
+                        Text(
+                          userName,
+                          textAlign: TextAlign.end,
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ]),
                     ]),
                   ),
@@ -77,7 +91,8 @@ class SocialNetworkWidget extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding:
+                        const EdgeInsets.only(left: 20, right: 20, top: 20),
                     child: Row(
                       children: [
                         CircleAvatar(),
@@ -86,14 +101,27 @@ class SocialNetworkWidget extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Container(
+                      padding: EdgeInsets.only(right: 20),
+                      alignment: Alignment.centerRight,
+                      child:
+                          Text('02.09.2019 в 04:53', textAlign: TextAlign.end)),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Table(children: [
+                    child: Table(columnWidths: {
+                      0: FractionColumnWidth(.4),
+                      1: FractionColumnWidth(.2),
+                      2: FractionColumnWidth(.4)
+                    }, children: [
                       TableRow(children: [
                         Text(comment),
                         Text('0', textAlign: textAlignCenter),
-                        Text('02 сен 2019 в 04:53\nПользователь',
-                            textAlign: TextAlign.end)
+                        Text(
+                          userName,
+                          textAlign: TextAlign.end,
+                          maxLines: 3,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                       ]),
                     ]),
                   ),
