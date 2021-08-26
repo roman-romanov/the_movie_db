@@ -65,5 +65,10 @@ final styleYearOfMovie = TextStyle(
   fontFamily: 'Times New Roman',
 );
 //******************************************************************************
+final nameSeventeenBlack =
+    TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Colors.black);
 final nameEighteen = TextStyle(fontSize: 18, fontWeight: FontWeight.w700);
+final nameTwentyFour =
+    TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.w700);
+final textAlignCenter = TextAlign.center;
 //******************************************************************************
