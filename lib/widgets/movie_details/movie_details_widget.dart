@@ -3,6 +3,7 @@ import 'movie_detaills_main_info_widget.dart';
 import 'package:the_movie_db/const/const.dart';
 
 import 'movie_details_screen_cast_widget.dart';
+import 'movie_details_social_network.dart';
 
 class MovieDetailsWidget extends StatefulWidget {
   final int movieId;
@@ -27,6 +28,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
           children: [
             MovieDeailsMainInfoWidget(),
             MovieDetailsScreenCastWidget(),
+            SocialNetworkWidget(),
           ],
         ),
       );

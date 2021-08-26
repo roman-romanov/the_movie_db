@@ -29,4 +29,8 @@ abstract class AppImages {
       AssetImage('assets/images/cast_criuse_of_jungles/paul_giamatti.jpg');
   static const dani_rovira =
       AssetImage('assets/images/cast_criuse_of_jungles/dani_rovira.jpg');
+  static const sulemCalderon =
+      AssetImage('assets/images/cast_criuse_of_jungles/sulem_calderon.jpg');
+  static const veronicaFalcon =
+      AssetImage('assets/images/cast_criuse_of_jungles/veronica_falcon.jpg');
 }
