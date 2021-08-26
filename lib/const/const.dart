@@ -39,4 +39,4 @@ final String discussions = 'Обсуждения';
 final String toDiscussions = 'К обсуждениям';
 final String avatarName = 'Имя Аватара';
 final String comment = 'Комментарий';
-final String user = 'Пользователь';
+final String userName = 'Пользователь';
