@@ -61,13 +61,7 @@ class MovieDetailsScreenCastWidget extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'В главных ролях',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
+            Text(starring, style: nameTwentyFour),
             SizedBox(height: 10),
             Container(
               height: 210,
@@ -125,11 +119,7 @@ class _CastPerson extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          name,
-                          style: nameEighteen,
-                          maxLines: 2,
-                        ),
+                        Text(name, style: nameEighteen, maxLines: 2),
                         Text(castName, maxLines: 3),
                       ],
                     ),

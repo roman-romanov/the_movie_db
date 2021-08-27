@@ -9,20 +9,35 @@ class SocialNetworkWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(height: 0.5, width: widthInfifnity, color: Colors.black),
+        Container(height: 0.5, width: widthInfifnity, color: black),
         Padding(
           padding: const EdgeInsets.all(20.0),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 socialNetwork,
                 style: nameTwentyFour,
+                maxLines: 2,
               ),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(reviews, style: nameSeventeenBlack),
-                  Text(discussions, style: nameSeventeenBlack),
+                  Row(
+                    children: [
+                      Text(reviews, style: nameSeventeenBlack),
+                      SizedBox(width: 8),
+                      Text('0',style: nameSixteenBlackBold,),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(discussions, style: nameSeventeenBlack),
+                      SizedBox(width: 8),
+                      Text('12',style: nameSixteenBlackBold,),
+                    ],
+                  ),
                 ],
               )
             ],

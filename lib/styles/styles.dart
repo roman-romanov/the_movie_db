@@ -52,6 +52,8 @@ final nameSeventeen =
     TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Colors.white);
 final nameSixteen =
     TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white);
+final nameSixteenBlackBold =
+    TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black);
 final nameFifteen =
     TextStyle(fontSize: 15, fontWeight: FontWeight.w400, color: Colors.white);
 final nameFifteenBold =
