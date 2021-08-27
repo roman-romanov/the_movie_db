@@ -46,6 +46,8 @@ final half = 0.5;
 final black = Colors.black;
 
 final nameTwentySix = TextStyle(fontSize: 26.0, fontWeight: FontWeight.w600);
+final nameThirtyTwo =
+    TextStyle(color: Colors.white, fontSize: 32.0, fontWeight: FontWeight.w700);
 final nameTwentyTwo =
     TextStyle(fontSize: 22.0, fontWeight: FontWeight.w600, color: Colors.white);
 final nameSeventeen =
@@ -72,5 +74,7 @@ final nameSeventeenBlack =
 final nameEighteen = TextStyle(fontSize: 18, fontWeight: FontWeight.w700);
 final nameTwentyFour =
     TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.w700);
+final nameTwentyWhite =
+    TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700,);
 final textAlignCenter = TextAlign.center;
 //******************************************************************************
