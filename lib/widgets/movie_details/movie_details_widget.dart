@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_media_widget.dart';
+import 'package:the_movie_db/widgets/movie_details/movie_details_watch_collection.dart';
 import 'movie_detaills_main_info_widget.dart';
 import 'package:the_movie_db/const/const.dart';
 
@@ -31,6 +32,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
             MovieDetailsScreenCastWidget(),
             SocialNetworkWidget(),
             MediaWidget(),
+            WatchCollectionWidget(),
           ],
         ),
       );

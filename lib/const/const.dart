@@ -46,3 +46,5 @@ final String backdrops =  'Задники';
 final String themostPopular =  'Самое популярное';
 final String videoClip =  'Видеоролики';
 final String posters =  'Постеры';
+final String includedInTheCollection =  'Входит в коллекцию "Круиз по джунглям"';
+final String watchCollection =  'Смотреть коллекцию';

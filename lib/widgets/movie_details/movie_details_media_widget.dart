@@ -76,7 +76,6 @@ class MediaWidget extends StatelessWidget {
           ),
         ),
         Padding(padding: EdgeInsets.all(20)),
-        Container(width: widthInfifnity, height: half,color: black,),
       ],
     );
   }
