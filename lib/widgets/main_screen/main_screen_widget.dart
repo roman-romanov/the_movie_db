@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:the_movie_db/widgets/movie_list/movie_list_widget.dart';
 
 class MainScreen extends StatefulWidget {
@@ -18,17 +19,17 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
- 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('TMDB')),
+      appBar: AppBar(
+        title: SvgPicture.asset('assets/images/tmdb_logo.svg',
+            height: 40, width: 50, color: Colors.blue),
+        centerTitle: true,
+      ),
       //Выбор индексов в _widgets по _selectedTab
       //IndexedStack хранит состояние, одновременно открыты 3 странички
-      body: IndexedStack(
-        index: _selectedTab,
-        children: [
+      body: IndexedStack(index: _selectedTab, children: [
         Text('Новости'),
         MovieListWidget(),
         Text('Сериалы'),

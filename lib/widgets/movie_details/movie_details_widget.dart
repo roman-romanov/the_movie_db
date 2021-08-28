@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_media_widget.dart';
+import 'package:the_movie_db/widgets/movie_details/movie_details_recomendation.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_watch_collection.dart';
 import 'movie_detaills_main_info_widget.dart';
-import 'package:the_movie_db/const/const.dart';
-
 import 'movie_details_screen_cast_widget.dart';
 import 'movie_details_social_network.dart';
 
@@ -21,8 +21,8 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
         appBar: AppBar(
-          title: Text(cruiseJungle),
-          centerTitle: true,
+          title: SvgPicture.asset('assets/images/tmdb_logo.svg',
+              color: Colors.blue, height: 40, width: 50),
         ),
         body: ListView(
           physics:
@@ -33,6 +33,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
             SocialNetworkWidget(),
             MediaWidget(),
             WatchCollectionWidget(),
+            RecomendationWidget(),
           ],
         ),
       );

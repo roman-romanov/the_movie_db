@@ -72,9 +72,16 @@ final styleYearOfMovie = TextStyle(
 final nameSeventeenBlack =
     TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Colors.black);
 final nameEighteen = TextStyle(fontSize: 18, fontWeight: FontWeight.w700);
+final nameTwentySimple =
+    TextStyle(color: Colors.black87, fontSize: 20, fontWeight: FontWeight.w400);
 final nameTwentyFour =
     TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.w700);
-final nameTwentyWhite =
-    TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w700,);
+final nameTwentyBlack =
+    TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.w700);
+final nameTwentyWhite = TextStyle(
+  color: Colors.white,
+  fontSize: 20,
+  fontWeight: FontWeight.w700,
+);
 final textAlignCenter = TextAlign.center;
 //******************************************************************************
