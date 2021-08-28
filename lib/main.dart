@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
               unselectedItemColor: Colors.grey,
               selectedItemColor: Colors.white),
           appBarTheme: AppBarTheme(
+              centerTitle: true,
               backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
               brightness: Brightness.dark)),
 

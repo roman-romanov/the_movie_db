@@ -10,6 +10,9 @@ class MediaWidget extends StatelessWidget {
     var images = [
       ImagesWidget(
           imageName:
+              'https://i.ytimg.com/vi/OWvLJEkJD7Y/hqdefault.jpg'),
+      ImagesWidget(
+          imageName:
               'https://www.themoviedb.org/t/p/w1000_and_h450_multi_faces/7WJjFviFBffEJvkAms4uWwbcVUk.jpg'),
       ImagesWidget(
           imageName:
