@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:the_movie_db/widgets/movie_details/movie_details_content_account.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_media_widget.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_recomendation.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_watch_collection.dart';
@@ -34,6 +35,7 @@ class _MovieDetailsWidgetState extends State<MovieDetailsWidget> {
             MediaWidget(),
             WatchCollectionWidget(),
             RecomendationWidget(),
+            ContentAccountWidget(),
           ],
         ),
       );

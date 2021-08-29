@@ -44,6 +44,7 @@ final verticalDividerThirty =
     VerticalDivider(color: Colors.white, indent: 10, endIndent: 10);
 final half = 0.5;
 final black = Colors.black;
+final white = Colors.white;
 
 final nameTwentySix = TextStyle(fontSize: 26.0, fontWeight: FontWeight.w600);
 final nameThirtyTwo =
@@ -54,6 +55,12 @@ final nameSeventeen =
     TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Colors.white);
 final nameSixteen =
     TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white);
+final nameEighteenWhiteSimple =
+    TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white);
+final nameSixteenBlack =
+    TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Colors.black);
+final nameSixteenBlackSimple =
+    TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black);
 final nameSixteenBlackBold =
     TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black);
 final nameFifteen =
