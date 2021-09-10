@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:the_movie_db/const/const.dart';
 import 'package:the_movie_db/images/app_images.dart';
+import 'package:the_movie_db/styles/const.dart';
 import 'package:the_movie_db/styles/styles.dart';
 import 'package:the_movie_db/widgets/radial_percent/radial_percent_widget.dart';
 

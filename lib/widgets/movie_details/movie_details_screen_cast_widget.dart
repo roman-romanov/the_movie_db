@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_movie_db/const/const.dart';
+import 'package:the_movie_db/styles/const.dart';
 import 'package:the_movie_db/styles/styles.dart';
 
 class MovieDetailsScreenCastWidget extends StatelessWidget {
