@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:the_movie_db/styles/colors.dart';
 import 'package:the_movie_db/widgets/main_screen/main_screen_widget.dart';
 import 'package:the_movie_db/widgets/movie_details/movie_details_widget.dart';
+import 'styles/const.dart';
 import 'widgets/auth/auth_widget.dart';
 
 void main() {
@@ -16,17 +18,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'The Movie DB',
+      title: logoTMDB,
       theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: blue,
           bottomNavigationBarTheme: BottomNavigationBarThemeData(
-              backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
-              unselectedItemColor: Colors.grey,
-              selectedItemColor: Colors.white),
+              backgroundColor: appColor,
+              unselectedItemColor: grey,
+              selectedItemColor: white),
           appBarTheme: AppBarTheme(
               centerTitle: true,
-              backgroundColor: const Color.fromRGBO(3, 37, 65, 1),
-              brightness: Brightness.dark)),
+              backgroundColor: appColor,
+              systemOverlayStyle: SystemUiOverlayStyle.light)),
 
       routes: {
         '/auth_widget': (context) => AuthWidget(),
